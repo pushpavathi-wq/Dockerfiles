@@ -1,5 +1,5 @@
-ARG version
-FROM almalinux:${version:9}  # ARG is forst instaruction only to provide version
+ARG version=9
+FROM almalinux:${version}  # ARG is the only instaruction that is declared infront of from and used in from
 ARG company=infosys
 
 # we cant access argument inside container,so passing it in ENV variables
