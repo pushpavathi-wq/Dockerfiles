@@ -3,4 +3,4 @@ RUN dnf install nginx -y
 ADD https://raw.githubusercontent.com/pushpavathi-wq/Dockerfiles/refs/heads/main/RUN/Dockerfile /usr/share/nginx/html/index.html
 RUN chmod +r /usr/share/nginx/html/index.html
 ADD sample-4.tar /tmp/
-CMD ["nginx", "-g", "daemon-off;"]
+CMD ["nginx", "-g", "daemon off;"]
