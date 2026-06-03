@@ -1,5 +1,7 @@
 FROM almalinux:9
-RUN sudo dnf install nginx -y 
+RUN dnf install nginx -y 
 
 CMD ["google.com"]
 ENTRYPOINT ["ping"]
+
+# entrypoint will connect with CMD
